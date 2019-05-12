@@ -1,7 +1,25 @@
-@import "utils";
-@import "fonts";
-@import "typography";
+// @import "utils";
+// @import "fonts";
+// @import "typography";
 
+@import "header";
+
+html,
 body {
-  background: $c-gray;
+  margin: 0;
+  box-sizing: border-box;
+  min-width: 900px;
+}
+
+ul,
+li,
+a {
+  font-family: Avenir, sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  color: #3d4e61;
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
