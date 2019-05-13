@@ -49,6 +49,33 @@
   height: 100%;
   border-radius: 50%; }
 
+.footer {
+  -webkit-box-shadow: 0 -1px 0 #e1e7ed;
+          box-shadow: 0 -1px 0 #e1e7ed;
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  justify-items: start; }
+
+.list {
+  padding: 44px 0; }
+
+.list__item {
+  color: #3d4e61;
+  padding-bottom: 9px; }
+
+.list__item:last-child {
+  padding-bottom: 0; }
+
+.list__item_headding {
+  font-weight: 800;
+  padding-bottom: 20px; }
+
 html,
 body {
   margin: 0;
