@@ -2,11 +2,217 @@
 @import "greeting";
 @import "footer";
 
+@font-face {
+  font-family: Avenir;
+  src: url("../fonts/Avenir.ttc");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Roboto-Regular;
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+
+@mixin set_size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin put-in_border() {
+  border: 1px solid #e1e7ed;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
 html,
 body {
   margin: 0;
   box-sizing: border-box;
   min-width: 900px;
+}
+
+body {
+  font-family: Avenir, sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  background: #fff;
+  color: #3d4e61;
+}
+
+.apartment-photo {
+  @include set_size(100%, 464px);
+  margin: 0 0 39px;
+}
+
+.small-text {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.custom-message {
+  @include set_size(482px, 104px);
+}
+
+.details {
+  display: grid;
+  grid-template-columns: 52.85% 41.6%;
+  grid-column-gap: 5.55%;
+
+  .left_apartment-describes_column {
+    @include set_size(491px, auto);
+    justify-self: right;
+
+    p {
+      line-height: 24px;
+      @include set_size(100%, 120.42px);
+    }
+
+    .apartment-description {
+      position: relative;
+
+      .main-header {
+        font-size: 36px;
+        line-height: 42px;
+        margin: 0 0 10.16px;
+      }
+
+      .entire-header {
+        margin: 0 0 15.05px;
+      }
+
+      .inline-list {
+        display: grid;
+        margin: 0 0 28.05px;
+        grid-template: repeat(auto-fill, 28.95px) / repeat(auto-fill, 81.51px);
+        grid-gap: 11.49px;
+      }
+
+      p {
+        margin: 0 0 5.58px;
+      }
+
+      .hosts-contacts {
+        @include set_size(176.26px, 28.95px);
+        margin: 0 0 44.05px;
+      }
+    }
+
+    .extra {
+      h3 {
+        @include set_size(117.35px, 28px);
+        font-size: 20px;
+        line-height: 23px;
+        margin: 0 0 21px;
+      }
+
+      .amenities {
+        display: grid;
+        grid-template: repeat(2, 28.95px) / repeat(auto-fill, 176.26px);
+        grid-gap: 19.74px / 13.05px;
+        margin: 0 0 13.05px;
+      }
+
+      .button_show-amenities {
+        @include set_size(176.26px, 28.95px);
+        margin: 0 0 66.05px;
+      }
+    }
+
+    .reviews {
+      .reviews_header {
+        @include set_size(142.5px, 39px);
+        font-size: 28px;
+        line-height: 33px;
+        margin: 0 0 34px;
+      }
+
+      .customer-review {
+        position: relative;
+        .customer-detail {
+          $ellipse-width: 50px;
+          $gap: 21px;
+          display: grid;
+          grid-template: 50px / 50px calc(100% - #{$ellipse-width} - #{$gap});
+          grid-column-gap: $gap;
+
+          .ellipse {
+            @include set_size($ellipse-width);
+            background: #c4c4c4;
+            border-radius: 50%;
+          }
+
+          .customer-name {
+            @include set_size(46px, 28px);
+            font-size: 20px;
+            line-height: 27px;
+            margin: 0 0 2px;
+          }
+        }
+
+        .custom-message {
+          margin: 23px 0 17px;
+        }
+      }
+    }
+    .about-host {
+      h2 {
+        //font-family: Roboto-Regular;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        margin: 0 0 11px;
+      }
+
+      .small-text {
+        @include set_size(173px, 25px);
+        margin: 0 0 11px;
+      }
+    }
+  }
+
+  .right_book-apartment_column {
+    justify-self: left;
+
+    .book-form {
+      @include set_size(330px, 319px);
+      @include put-in_border();
+      padding: 30px;
+
+      .desired-date,
+      .guests {
+        @include set_size(270px, 50px);
+        @include put-in_border();
+        padding: 13.75px 17px ;
+      }
+
+      .desired-date {
+        margin: 39px 0 0;
+      }
+
+      .guests {
+        margin: 16px 0 0;
+      }
+
+      .red {
+        background: #fd5c63;
+      }
+
+      .button-wrapper {
+        @include set_size(270px, 50px);
+        border-radius: 4px;
+        margin: 24px 0 0;
+
+        .submit-button {
+          @include set_size(auto, auto);
+          border: none;
+          margin: 15px 95.29px 13px 96.74px;
+          color: #fff;
+          text-align: center;
+        }
+      }
+    }
+  }
 }
 
 ul,
