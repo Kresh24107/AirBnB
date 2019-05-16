@@ -20,57 +20,57 @@
       </a>
     </nav>
   </header>
+  <img class="apartment-photo" src="./images/room.png" alt="Big, lightly kitchen in apartment">
   <main class="details">
-    <img class="apartment-photo" src="./images/room.png" alt="Big, lightly kitchen in apartment">
-    <form name="book-window" action="#">
-      <div class="cost">25$ per night</div>
-      <input class="desired-date " type="date" placeholder="Date">
-      <input class="guests" type="text" placeholder="Guests">
-      <button class="submit-button" type="submit">Book</button>
-    </form>
-    <section>
-      <h1 class="main-header">Quiet apartment</h1>
+    <div class="left_apartment-describes_column">
       <article class="apartment-description">
-        <section class="entire">
-          Entire apartment
-          <ul>
+        <section>
+          <h1 class="main-header">Quiet apartment</h1>
+          <div class="entire-header small-text">Entire apartment</div>
+          <ul class="inline-list">
             <li>4 guests</li>
             <li>1 bed</li>
             <li>1 bath</li>
           </ul>
         </section>
-        City Apartment is newly renovated in the heart of Budapest, right in the city center. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod rempor incididunt ut labore et dolore magna aliqua. Ut enim ad mimim veniam.
-        <div>Contact host</div>
+        <p>City Apartment is newly renovated in the heart of Budapest, right in the city center.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod rempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad mimim veniam.</p>
+        <div class="hosts-contacts">Contact host</div>
+        <section class="extra">
+          <h3>Amenities</h3>
+          <ul class="amenities">
+            <li>Elevator</li>
+            <li>Washer</li>
+            <li>Hair dryer</li>
+            <li>Kitchen</li>
+          </ul>
+          <div class="button_show-amenities">Show All Amenities</div>
+        </section>
       </article>
-      <section class="extra">
-        <h3>Amenities</h3>
-        <ul class="amenities">
-          <li>Elevator</li>
-          <li>Washer</li>
-          <li>Hair dryer</li>
-          <li>Kitchen</li>
-        </ul>
-        <div>Show All Amenities</div>
-      </section>
       <section class="reviews">
-        <h2>Reviews</h2>
+        <h2 class="reviews_header">Reviews</h2>
         <section class="customer-review">
           <div class="customer-detail">
             <div class="ellipse"></div>
-            <h3>John</h3>
-            <div class="customer-message-date small-text">September 2016</div>
+            <div>
+              <h3 class="customer-name">John</h3>
+              <div class="customer-message-date small-text">September 2016</div>
+            </div>
           </div>
-          <article class="customer-review-message">
+          <article class="custom-message">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod rempor incididunt ut labore et dolore magna aliqua. Ut enim ad mimim veniam.
           </article>
         </section>
         <section class="customer-review">
           <div class="customer-detail">
             <div class="ellipse"></div>
-            <h3>John</h3>
-            <div class="customer-message-date small-text">September 2016</div>
+            <div>
+              <h3 class="customer-name">John</h3>
+              <div class="customer-message-date small-text">September 2016</div>
+            </div>
           </div>
-          <article class="customer-review-message">
+          <article class="custom-message">
             Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
           </article>
         </section>
@@ -78,11 +78,21 @@
       <section class="about-host">
         <h2>Hosted by Jane</h2>
         <div class="small-text">Budapest, Hungary</div>
-        <article class="short-about">
+        <article class="custom-message">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod rempor incididunt ut labore et dolore magna aliqua.
         </article>
         <div class="contact_button">Contact Host</div>
       </section>
+    </div>
+    <section class="right_book-apartment_column">
+      <form class="book-form" action="#">
+        <div>25$ per night</div>
+        <input class="desired-date" type="date" placeholder="Date">
+        <input class="guests" type="text" placeholder="Guests">
+        <div class="button-wrapper red">
+          <button class="submit-button red" type="submit">Book</button>
+        </div>
+      </form>
     </section>
   </main>
   <footer class="footer">
