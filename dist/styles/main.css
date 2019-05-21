@@ -47,6 +47,15 @@
   height: 100%;
   border-radius: 50%; }
 
+.greeting {
+  width: 100%;
+  height: 464px;
+  overflow: hidden; }
+
+.greeting__img {
+  height: 100%;
+  width: 100%; }
+
 .footer {
   -webkit-box-shadow: 0 -1px 0 #e1e7ed;
           box-shadow: 0 -1px 0 #e1e7ed;
