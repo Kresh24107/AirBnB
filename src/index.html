@@ -26,8 +26,8 @@
       <article class="apartment-description">
         <section>
           <h1 class="main-header">Quiet apartment</h1>
-          <div class="entire-header small-text">Entire apartment</div>
-          <ul class="inline-list">
+          <div class="entire-header">Entire apartment</div>
+          <ul class="inline-entire-list">
             <li>4 guests</li>
             <li>1 bed</li>
             <li>1 bath</li>
@@ -41,8 +41,8 @@
           <h3>Amenities</h3>
           <ul class="amenities">
             <li>Elevator</li>
-            <li>Washer</li>
             <li>Hair dryer</li>
+            <li>Washer</li>
             <li>Kitchen</li>
           </ul>
           <div class="button_show-amenities">Show All Amenities</div>
@@ -79,7 +79,7 @@
         <h2>Hosted by Jane</h2>
         <div class="small-text">Budapest, Hungary</div>
         <article class="custom-message">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod rempor incididunt ut labore et dolore magna aliqua.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua.
         </article>
         <div class="contact_button">Contact Host</div>
       </section>
@@ -87,7 +87,13 @@
     <section class="right_book-apartment_column">
       <form class="book-form" action="#">
         <div>25$ per night</div>
-        <input class="desired-date" type="date" placeholder="Date">
+        <input
+          class="desired-date"
+          type="text"
+          onfocus="(this.type='date')"
+          onblur="(this.type='text')"
+          placeholder="Date"
+        >
         <input class="guests" type="text" placeholder="Guests">
         <div class="button-wrapper red">
           <button class="submit-button red" type="submit">Book</button>

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700&display=swap");
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -83,14 +84,8 @@
   padding-bottom: 20px; }
 
 @font-face {
-  font-family: Avenir;
-  src: url("../fonts/Avenir.ttc");
-  font-style: normal;
-  font-weight: normal; }
-
-@font-face {
-  font-family: Roboto-Regular;
-  src: url("../fonts/Roboto-Regular.ttf"); }
+  font-family: "Avenir";
+  src: url("../fonts/Avenir.ttf") format("truetype"), url("../fonts/Avenir.eot") format("embedded-opentype"), url("../fonts/Avenir.woff") format("woff"); }
 
 html,
 body {
@@ -100,7 +95,8 @@ body {
   min-width: 900px; }
 
 body {
-  font-family: Avenir, sans-serif;
+  font-family: "Avenir", sans-serif;
+  font-style: normal;
   font-size: 16px;
   line-height: 19px;
   background: #fff;
@@ -117,63 +113,74 @@ body {
 
 .custom-message {
   width: 482px;
-  height: 104px; }
+  height: 104px;
+  font-size: 18px;
+  line-height: 28px; }
 
 .details {
   display: grid;
-  grid-template-columns: 52.85% 41.6%;
-  grid-column-gap: 5.55%; }
+  grid-template-columns: 53.49% 36.63%;
+  grid-column-gap: 89px; }
   .details .left_apartment-describes_column {
-    width: 491px;
+    width: 482px;
     height: auto;
     justify-self: right; }
     .details .left_apartment-describes_column p {
       line-height: 24px;
-      width: 100%;
-      height: 120.42px; }
+      font-stretch: semi-condensed;
+      width: 482px;
+      height: 104px; }
     .details .left_apartment-describes_column .apartment-description {
       position: relative; }
       .details .left_apartment-describes_column .apartment-description .main-header {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
         font-size: 36px;
         line-height: 42px;
-        margin: 0 0 10.16px; }
+        margin: 0 0 17px; }
       .details .left_apartment-describes_column .apartment-description .entire-header {
-        margin: 0 0 15.05px; }
-      .details .left_apartment-describes_column .apartment-description .inline-list {
+        width: 173px;
+        height: 25px;
+        margin: 0 0 19px;
+        color: #687c94;
+        font-stretch: semi-expanded; }
+      .details .left_apartment-describes_column .apartment-description .inline-entire-list {
         display: grid;
-        margin: 0 0 28.05px;
-        grid-template: repeat(auto-fill, 28.95px)/repeat(auto-fill, 81.51px);
-        grid-gap: 11.49px; }
+        margin: 0 0 32px;
+        grid-template: repeat(auto-fill, 25px)/repeat(auto-fill, 80px);
+        grid-gap: 13px; }
       .details .left_apartment-describes_column .apartment-description p {
-        margin: 0 0 5.58px; }
+        margin: 0 0 22px; }
       .details .left_apartment-describes_column .apartment-description .hosts-contacts {
-        width: 176.26px;
-        height: 28.95px;
-        margin: 0 0 44.05px; }
+        width: 173px;
+        height: 25px;
+        font-weight: 600;
+        margin: 0 0 48px; }
     .details .left_apartment-describes_column .extra h3 {
-      width: 117.35px;
-      height: 28px;
+      width: 113px;
+      height: 24px;
       font-size: 20px;
       line-height: 23px;
-      margin: 0 0 21px; }
+      margin: 0 0 25px; }
     .details .left_apartment-describes_column .extra .amenities {
       display: grid;
-      grid-template: repeat(2, 28.95px)/repeat(auto-fill, 176.26px);
-      grid-gap: 19.74px / 13.05px;
-      margin: 0 0 13.05px; }
+      grid-template: repeat(2, 25px)/repeat(auto-fill, 173px);
+      gap: 23px 17px;
+      margin: 0 0 17px; }
     .details .left_apartment-describes_column .extra .button_show-amenities {
-      width: 176.26px;
-      height: 28.95px;
-      margin: 0 0 66.05px; }
+      width: 173px;
+      height: 25px;
+      font-weight: 600;
+      margin: 0 0 70px; }
     .details .left_apartment-describes_column .reviews .reviews_header {
-      width: 142.5px;
-      height: 39px;
       font-size: 28px;
       line-height: 33px;
-      margin: 0 0 34px; }
+      margin: 0 0 40px; }
     .details .left_apartment-describes_column .reviews .customer-review {
-      position: relative; }
+      position: relative;
+      margin: 0 0 17px; }
       .details .left_apartment-describes_column .reviews .customer-review .customer-detail {
+        margin: 0 0 23px;
         display: grid;
         grid-template: 50px/50px calc(100% - 50px - 21px);
         grid-column-gap: 21px; }
@@ -182,23 +189,46 @@ body {
           height: 50px;
           background: #c4c4c4;
           border-radius: 50%; }
+        .details .left_apartment-describes_column .reviews .customer-review .customer-detail .customer-message-date,
         .details .left_apartment-describes_column .reviews .customer-review .customer-detail .customer-name {
-          width: 46px;
-          height: 28px;
-          font-size: 20px;
-          line-height: 27px;
-          margin: 0 0 2px; }
+          margin: 0;
+          width: 173px;
+          height: 25px;
+          line-height: 25px; }
+        .details .left_apartment-describes_column .reviews .customer-review .customer-detail .customer-name {
+          font-size: 20px; }
       .details .left_apartment-describes_column .reviews .customer-review .custom-message {
-        margin: 23px 0 17px; }
-    .details .left_apartment-describes_column .about-host h2 {
-      font-style: normal;
-      font-weight: bold;
-      font-size: 28px;
-      margin: 0 0 11px; }
-    .details .left_apartment-describes_column .about-host .small-text {
-      width: 173px;
-      height: 25px;
-      margin: 0 0 11px; }
+        margin: 0 0 17px; }
+    .details .left_apartment-describes_column .reviews:last-child {
+      margin: 0 0 31px; }
+    .details .left_apartment-describes_column .about-host {
+      margin: 0 0 95px;
+      position: relative; }
+      .details .left_apartment-describes_column .about-host h2 {
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 33px;
+        margin: 0 0 11px; }
+      .details .left_apartment-describes_column .about-host .small-text {
+        width: 173px;
+        height: 25px;
+        margin: 0 0 11px; }
+      .details .left_apartment-describes_column .about-host .contact_button {
+        position: absolute;
+        width: 150px;
+        height: 50px;
+        border: 1px solid #118488;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        border-radius: 4px;
+        color: #118488;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 50px;
+        bottom: -20px; }
   .details .right_book-apartment_column {
     justify-self: left; }
     .details .right_book-apartment_column .book-form {
@@ -208,9 +238,15 @@ body {
       -webkit-box-sizing: border-box;
               box-sizing: border-box;
       border-radius: 3px;
-      padding: 30px; }
+      padding: 30px;
+      font-family: "Roboto", sans-serif;
+      font-size: 18px;
+      line-height: 19px;
+      font-weight: 300; }
       .details .right_book-apartment_column .book-form .desired-date,
       .details .right_book-apartment_column .book-form .guests {
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
         width: 270px;
         height: 50px;
         border: 1px solid #e1e7ed;
@@ -219,7 +255,7 @@ body {
         border-radius: 3px;
         padding: 13.75px 17px; }
       .details .right_book-apartment_column .book-form .desired-date {
-        margin: 39px 0 0; }
+        margin: 42px 0 0; }
       .details .right_book-apartment_column .book-form .guests {
         margin: 16px 0 0; }
       .details .right_book-apartment_column .book-form .red {
@@ -230,17 +266,19 @@ body {
         border-radius: 4px;
         margin: 24px 0 0; }
         .details .right_book-apartment_column .book-form .button-wrapper .submit-button {
+          font-family: "Roboto", sans-serif;
+          font-size: 16px;
           width: auto;
           height: auto;
           border: none;
-          margin: 15px 95.29px 13px 96.74px;
+          margin: 15px 96.74px 16px;
           color: #fff;
           text-align: center; }
 
 ul,
 li,
 a {
-  font-family: Avenir, sans-serif;
+  font-family: "Avenir", sans-serif;
   font-size: 16px;
   line-height: 19px;
   color: #3d4e61;
